@@ -34,5 +34,9 @@ pids/
 *.tar.gz
 *.zip
 
+# Allow releases directory
+!releases/*.tar.gz
+!releases/*.zip
+
 # Core dumps
 core.*
