@@ -2,17 +2,15 @@
 
 ## 📦 Quick Deployment Guide
 
-### 1. Download Repository
-Click the green **"Code"** button on GitHub → **"Download ZIP"**
+### 1. Download Deployment ZIP
+Find `strivetrack-deployment-ready.zip` in this repository and download it
 
-### 2. Extract Files
-Extract the ZIP file to get the `StriveTrack2.1-main` folder
-
-### 3. Deploy to Cloudflare Pages
+### 2. Upload to Cloudflare Pages  
 1. Go to your Cloudflare Pages project for `strivetrackapp.com`
-2. Upload **ALL FILES** from the `dist/` folder:
+2. **Upload the ZIP file directly** - Cloudflare will extract it properly
+3. Files will be placed at ROOT LEVEL (no nested folders):
    - `index.html`
-   - `webapp.6358aeb5.js`
+   - `webapp.6358aeb5.js`  
    - `webapp.d3899132.css`
    - `favicon.aa8f5a21.ico`
    - `_headers` ← **CRITICAL for MIME types**
