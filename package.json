@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel src/index.html --port 3001 --host 0.0.0.0",
     "build": "parcel build src/index.html --public-url ./",
-    "build:production": "npm run clean && parcel build src/index.html --public-url ./ --no-source-maps",
+    "build:production": "npm run clean && parcel build src/index.html --public-url ./ --no-source-maps && cp src/_headers dist/_headers && cp src/_redirects dist/_redirects",
     "clean": "rm -rf dist .parcel-cache",
     "deploy": "node deploy.js",
     "deploy:quick": "npm run build:production && npx wrangler pages deploy dist",
