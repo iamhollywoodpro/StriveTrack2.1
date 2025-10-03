@@ -1,0 +1,8 @@
+# Handle client-side routing for React SPA
+/*    /index.html   200
+
+# Handle service worker
+/sw.js   /sw.js   200
+
+# Handle static assets
+/favicon.ico   /favicon.aa8f5a21.ico   200

@@ -3,7 +3,7 @@ node_modules/
 
 # Build outputs
 build/
-dist/
+# dist/ - Allow dist for deployment
 
 # Env files
 .env
@@ -34,9 +34,8 @@ pids/
 *.tar.gz
 *.zip
 
-# Allow releases directory
-!releases/*.tar.gz
-!releases/*.zip
+# Allow dist directory for deployment
+!dist/
 
 # Core dumps
 core.*
